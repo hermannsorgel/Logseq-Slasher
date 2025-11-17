@@ -34,8 +34,6 @@ const main = () => {
       await logseq.Editor.deletePage(currentPage.uuid);
       await logseq.UI.showMsg(`Page "${currentPage.name}" has been deleted.`, 'success');
 
-      console.log('new part');
-
     } catch (error) {
       console.error('Error deleting page:', error);
       logseq.UI.showMsg('An unexpected error occurred while deleting the page.', 'error');
