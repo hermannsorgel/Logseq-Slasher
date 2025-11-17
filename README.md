@@ -21,5 +21,5 @@ This plugin adds a `/delete this pageּ` command that solves exactly these issue
 Pages are deleted without asking for confirmation. If user accidentally deletes a page, `⌘+z` will restore it.
 
 ## Demo
-https://github.com/user-attachments/assets/3594c770-be4a-429a-8149-e75973538474
+https://github.com/user-attachments/assets/b430b4c2-599e-4e1a-8528-dce4b4bcd617
 
