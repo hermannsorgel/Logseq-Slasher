@@ -1,5 +1,5 @@
 
-<img width="128" height="128" alt="slasher" src="https://github.com/user-attachments/assets/fce8b107-6bb6-4da7-89e0-cab38dd19ba3" />
+<img width="256" height="256" alt="slasher" src="https://github.com/user-attachments/assets/fce8b107-6bb6-4da7-89e0-cab38dd19ba3" />
 
 # Logseq Slasher
 The opinionated page remover for Logseq.
