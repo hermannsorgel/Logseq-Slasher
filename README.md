@@ -1,3 +1,6 @@
+
+<img width="128" height="128" alt="slasher" src="https://github.com/user-attachments/assets/fce8b107-6bb6-4da7-89e0-cab38dd19ba3" />
+
 # Logseq Slasher
 The opinionated page remover for Logseq.
 
@@ -18,3 +21,5 @@ This plugin adds a `/delete this pageּ` command that solves exactly these issue
 Pages are deleted without asking for confirmation. If user accidentally deletes a page, `⌘+z` will restore it.
 
 ## Demo
+https://github.com/user-attachments/assets/3594c770-be4a-429a-8149-e75973538474
+
