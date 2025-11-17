@@ -14,8 +14,8 @@ There are three annoying things about deleting pages:
 
 This plugin adds a `/delete this pageּ` command that solves exactly these issues:
 
-1. Deletes the current page
-2. Jumps to the previous page
+1. Deletes the current page.
+2. Jumps to the previous page.
 3. Removes all blocks referencing the removed page, if they contain no other data besides the reference.
 
 Pages are deleted without asking for confirmation. If user accidentally deletes a page, `⌘+z` will restore it.
