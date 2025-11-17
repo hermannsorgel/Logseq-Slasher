@@ -1,0 +1,18 @@
+{
+  "name": "slasher",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "parcel build src/index.html --dist-dir dist --no-cache --public-url ./",
+    "dev": "parcel watch src/index.html --dist-dir dist --no-cache  --public-url ./",
+    "package": "npm run build && mkdir -p release && cp -r dist/* release/ && cp package.json release/"
+  },
+  "logseq": {
+    "id": "slasher-plugin",
+    "title": "Slasher",
+    "icon": "slasher.png"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.1",
+    "@logseq/libs": "^0.2.8"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "logseq-plugin-hello-world",
+  "version": "0.0.1",
+  "main": "index.html",
+  "logseq": {
+    "id": "_edodonfur",
+    "title": "Say Hi to Logseq",
+    "icon": "logseq.png"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.1"
+  },
+  "dependencies": {
+    "@logseq/libs": "^0.2.8"
+  }
+}
