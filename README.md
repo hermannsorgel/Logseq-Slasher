@@ -12,7 +12,7 @@ There are three annoying things about deleting pages:
 2. After deleting the current page, Logseq jumps to the journal/home page — while I usually prefer to return to the previous page.
 3. If a page was created from another block with `[[syntax]]`, removing the page won't remove that block — it becomes an orphan, a regular text node.
 
-This plugin adds a `/delete this pageּ` command that solves exactly these issues:
+This plugin adds a `/delete this page` command that solves exactly these issues:
 
 1. Deletes the current page.
 2. Jumps to the previous page.
