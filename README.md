@@ -18,8 +18,29 @@ This plugin adds a `/delete this pageּ` command that solves exactly these issue
 2. Jumps to the previous page.
 3. Removes all blocks referencing the removed page, if they contain no other data besides the reference.
 
-Pages are deleted without asking for confirmation. If user accidentally deletes a page, `⌘+z` will restore it.
+Pages are deleted without asking for confirmation. If user accidentally deletes a page, `⌘+z` will restore it. Nevertheless, it is easy to lose data with Slasher, so please make regular backups.
 
 ## Demo
 https://github.com/user-attachments/assets/b430b4c2-599e-4e1a-8528-dce4b4bcd617
 
+## If
+
+If you do not want to install another plugin, or just do not like my approach, try this query:
+
+```clojure
+{:query [:find (pull ?page [*])
+         :in $ ?start
+         :where
+         (or-join [?tag]
+           [?tag :block/name "page"]
+           [?tag :block/name "property"]
+           [?tag :block/name "tag"]
+         )
+         [?page :block/tags ?tag]
+         [?page :block/created-at ?created]
+         [(> ?created ?start)] 
+ ]
+ :inputs [:-1d-start]
+}
+```
+It will show all recently created pages. With [bulk actions](https://github.com/logseq/docs/blob/master/db-version.md#bulk-actions) in Logseq DB it's easy to delete unwanted pages.
