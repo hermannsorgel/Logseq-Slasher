@@ -20,6 +20,8 @@ This plugin adds a `/delete this page` command that solves exactly these issues:
 
 Pages are deleted without asking for confirmation. If user accidentally deletes a page, `⌘+z` will restore it. Nevertheless, it is easy to lose data with Slasher, so please make regular backups.
 
+The plugin was tested only with Logseq DB (0.11). It probably does not work with the older MD versions.
+
 ## Demo
 https://github.com/user-attachments/assets/b430b4c2-599e-4e1a-8528-dce4b4bcd617
 
