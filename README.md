@@ -30,7 +30,7 @@ https://github.com/user-attachments/assets/b430b4c2-599e-4e1a-8528-dce4b4bcd617
 If you also struggle with deleting pages, but do not want to install another plugin, or just do not like my approach, try this query:
 
 ```clojure
-{:query [:find (pull ?page [*])
+{:query [:find (pull ?page [:block/name :block/tags])
          :in $ ?start
          :where
          (or-join [?tag]
