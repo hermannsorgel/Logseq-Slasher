@@ -143,8 +143,6 @@ const jumpBack = () => {
 };
 
 const main = async () => {
-  logseq.UI.showMsg(`plugin is loaded`, 'warning');
-
   let graphType: 'db' | 'md' = (await isDBgraph()) ? 'db' : 'md';
   let version = (await isDBapp()) ? dbVersion : mdVersion;
   let settings = getSettings(graphType);
