@@ -1,13 +1,7 @@
 import '@logseq/libs';
 import { PageEntity, PageIdentity } from '@logseq/libs/dist/LSPlugin.user';
 
-import {
-  mdVersion,
-  dbVersion,
-  isDBapp,
-  getCurrentPage,
-  jumpBack,
-} from '../utils';
+import { mdVersion, dbVersion, isDBapp, jumpBack } from '../utils';
 
 interface VersionHandler {
   getPagePointer: (pageObject: PageEntity) => string;
@@ -21,7 +15,8 @@ export const deletePage = async () => {
   let version = (await isDBapp()) ? dbVersion : mdVersion;
 
   logseq.Editor.registerSlashCommand('Delete this page', async () => {
-    const currentPage = await getCurrentPage();
+    const currentPage = await logseq.Editor.getCurrentPage();
+
     if (!currentPage) {
       console.log('No current page');
       return;

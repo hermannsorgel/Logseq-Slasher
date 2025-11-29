@@ -15,15 +15,6 @@ export const isDBapp = async (): Promise<boolean> => {
   return info.version >= '0.11.0';
 };
 
-export const getCurrentPage = async (): Promise<PageEntity | null> => {
-  const currentBlock = await logseq.Editor.getCurrentBlock();
-
-  if (!currentBlock?.page?.id) return null;
-
-  const currentPage = await logseq.Editor.getPage(currentBlock.page.id);
-  return currentPage || null;
-};
-
 export const jumpBack = (): void => {
   if (window.history.length > 1) {
     window.history.back();
