@@ -15,7 +15,7 @@ const commonSettings: SettingSchemaDesc[] = [
     title: 'Remove orphans',
     description:
       'Remove blocks that only contained [[references]] to the deleted page',
-    default: true,
+    default: false,
   },
 ];
 
@@ -27,7 +27,7 @@ const settingsSchemaMD: SettingSchemaDesc[] = [
     title: 'Clear References',
     description:
       'Remove page references links from blocks, keeping the content.',
-    default: true,
+    default: false,
   },
 ];
 
