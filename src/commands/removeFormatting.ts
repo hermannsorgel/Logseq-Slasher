@@ -8,7 +8,7 @@ export const removeFormatting = () => {
       return;
     }
 
-    const contentKey = (await logseq.App.checkCurrentIsDbGraph())
+    const contentKey = (await logseq.App.checkCurrentIsDbGraph?.())
       ? 'title'
       : 'content';
     const newContent = removeMarkdown(currentBlock[contentKey]);
